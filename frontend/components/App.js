@@ -78,7 +78,7 @@ export default function App({ lang = 'en' }) {
 
         <div className="inputGroup">
           <label htmlFor="username">{texts.LABEL_USERNAME}</label>
-          <input id="username" name="username" onChange={onChange} value={values.username} type="text" placeholder="Type username" />
+          <input id="username" name="username" onChange={onChange} value={values.username} type="text" placeholder={texts.PLACEHOLDER_USERNAME} />
           {errors.username && <div className="validation">{errors.username}</div>}
         </div>
 
@@ -98,12 +98,12 @@ export default function App({ lang = 'en' }) {
         </div>
 
         <div className="inputGroup">
-          <label htmlFor="favFood">{texts.TEXT_FAV_FOOD}</label>
+          <label htmlFor="favFood">{texts.LABEL_FAV_FOOD}</label>
           <select id="favFood" name="favFood" value={values.favFood} onChange={onChange}>
-            <option value="">-- {texts.TEXT_OPT_FAV_FOOD_1} --</option>
-            <option value="pizza">Pizza</option>
-            <option value="spaghetti">Spaghetti</option>
-            <option value="broccoli">Broccoli</option>
+            <option value="">{texts.TEXT_OPT_FAV_FOOD_1}</option>
+            <option value="pizza">{texts.TEXT_OPT_FAV_FOOD_2}</option>
+            <option value="spaghetti">{texts.TEXT_OPT_FAV_FOOD_3}</option>
+            <option value="broccoli">{texts.TEXT_OPT_FAV_FOOD_4}</option>
           </select>
           {errors.favFood && <div className="validation">{errors.favFood}</div>}
         </div>
@@ -117,7 +117,7 @@ export default function App({ lang = 'en' }) {
         </div>
 
         <div>
-          <input type="submit" disabled={!submitAllowed} value="Send" />
+          <input type="submit" disabled={!submitAllowed} value={texts.TEXT_SUBMIT} />
         </div>
       </form>
     </div>

@@ -15,38 +15,38 @@ describe('Module 4 Project Tests', () => {
       render(<App lang="en" />)
       expect(screen.getByText(txt.en.TEXT_HEADING_CREATE_ACCOUNT)).toBeVisible()
     })
-    // test(`TEXT_FAV_LANG_JS`, () => {
-    //   render(<App lang="en" />)
-    //   expect(screen.getByText(txt.en.TEXT_FAV_LANG_JS)).toBeVisible()
-    // })
-    // test(`TEXT_FAV_LANG_RUST`, () => {
-    //   render(<App lang="en" />)
-    //   expect(screen.getByText(txt.en.TEXT_FAV_LANG_RUST)).toBeVisible()
-    // })
-    // test(`TEXT_OPT_FAV_FOOD_1`, () => {
-    //   render(<App lang="en" />)
-    //   expect(screen.getByText(txt.en.TEXT_OPT_FAV_FOOD_1)).toBeVisible()
-    // })
-    // test(`TEXT_OPT_FAV_FOOD_2`, () => {
-    //   render(<App lang="en" />)
-    //   expect(screen.getByText(txt.en.TEXT_OPT_FAV_FOOD_2)).toBeVisible()
-    // })
-    // test(`TEXT_OPT_FAV_FOOD_3`, () => {
-    //   render(<App lang="en" />)
-    //   expect(screen.getByText(txt.en.TEXT_OPT_FAV_FOOD_3)).toBeVisible()
-    // })
-    // test(`TEXT_OPT_FAV_FOOD_4`, () => {
-    //   render(<App lang="en" />)
-    //   expect(screen.getByText(txt.en.TEXT_OPT_FAV_FOOD_4)).toBeVisible()
-    // })
-    // test(`TEXT_SUBMIT`, () => {
-    //   render(<App lang="en" />)
-    //   expect(screen.getByText(txt.en.TEXT_SUBMIT)).toBeVisible()
-    // })
-    // test(`TEXT_FAV_LANG`, () => {
-    //   render(<App lang="en" />)
-    //   expect(screen.getByText(txt.en.TEXT_FAV_LANG)).toBeVisible()
-    // })
+    test(`TEXT_FAV_LANG_JS`, () => {
+      render(<App lang="en" />)
+      expect(screen.getByText(txt.en.TEXT_FAV_LANG_JS)).toBeVisible()
+    })
+    test(`TEXT_FAV_LANG_RUST`, () => {
+      render(<App lang="en" />)
+      expect(screen.getByText(txt.en.TEXT_FAV_LANG_RUST)).toBeVisible()
+    })
+    test(`TEXT_OPT_FAV_FOOD_1`, () => {
+      render(<App lang="en" />)
+      expect(screen.getByText(txt.en.TEXT_OPT_FAV_FOOD_1)).toBeVisible()
+    })
+    test(`TEXT_OPT_FAV_FOOD_2`, () => {
+      render(<App lang="en" />)
+      expect(screen.getByText(txt.en.TEXT_OPT_FAV_FOOD_2)).toBeVisible()
+    })
+    test(`TEXT_OPT_FAV_FOOD_3`, () => {
+      render(<App lang="en" />)
+      expect(screen.getByText(txt.en.TEXT_OPT_FAV_FOOD_3)).toBeVisible()
+    })
+    test(`TEXT_OPT_FAV_FOOD_4`, () => {
+      render(<App lang="en" />)
+      expect(screen.getByText(txt.en.TEXT_OPT_FAV_FOOD_4)).toBeVisible()
+    })
+    test(`TEXT_SUBMIT`, () => {
+      render(<App lang="en" />)
+      expect(screen.getByText(txt.en.TEXT_SUBMIT)).toBeVisible()
+    })
+    test(`TEXT_FAV_LANG`, () => {
+      render(<App lang="en" />)
+      expect(screen.getByText(txt.en.TEXT_FAV_LANG)).toBeVisible()
+    })
 
     test(`PLACEHOLDER_USERNAME is visible`, () => {
       render(<App lang="en" />)
@@ -56,14 +56,14 @@ describe('Module 4 Project Tests', () => {
       render(<App lang="en" />)
       expect(screen.getByLabelText(txt.en.LABEL_USERNAME)).toBeVisible()
     })
-    // test('LABEL_FAV_FOOD', () => {
-    //   render(<App lang="en" />)
-    //   expect(screen.getByLabelText(txt.en.LABEL_FAV_FOOD)).toBeVisible()
-    // })
-    // test('LABEL_ACCEPT_TERMS', () => {
-    //   render(<App lang="en" />)
-    //   expect(screen.getByLabelText(txt.en.LABEL_ACCEPT_TERMS)).toBeVisible()
-    // })
+    test('LABEL_FAV_FOOD', () => {
+      render(<App lang="en" />)
+      expect(screen.getByLabelText(txt.en.LABEL_FAV_FOOD)).toBeVisible()
+    })
+    test('LABEL_ACCEPT_TERMS', () => {
+      render(<App lang="en" />)
+      expect(screen.getByLabelText(txt.en.LABEL_ACCEPT_TERMS)).toBeVisible()
+    })
     
   })
   describe('Spanish Language', () => {
@@ -76,38 +76,38 @@ describe('Module 4 Project Tests', () => {
       render(<App lang="esp" />)
       expect(screen.getByText(txt.esp.TEXT_HEADING_CREATE_ACCOUNT)).toBeVisible()
     })
-    // test(`TEXT_FAV_LANG_JS`, () => {
-    //   render(<App lang="esp" />)
-    //   expect(screen.getByText(txt.esp.TEXT_FAV_LANG_JS)).toBeVisible()
-    // })
-    // test(`TEXT_FAV_LANG_RUST`, () => {
-    //   render(<App lang="esp" />)
-    //   expect(screen.getByText(txt.esp.TEXT_FAV_LANG_RUST)).toBeVisible()
-    // })
-    // test(`TEXT_OPT_FAV_FOOD_1`, () => {
-    //   render(<App lang="esp" />)
-    //   expect(screen.getByText(txt.esp.TEXT_OPT_FAV_FOOD_1)).toBeVisible()
-    // })
-    // test(`TEXT_OPT_FAV_FOOD_2`, () => {
-    //   render(<App lang="esp" />)
-    //   expect(screen.getByText(txt.esp.TEXT_OPT_FAV_FOOD_2)).toBeVisible()
-    // })
-    // test(`TEXT_OPT_FAV_FOOD_3`, () => {
-    //   render(<App lang="esp" />)
-    //   expect(screen.getByText(txt.esp.TEXT_OPT_FAV_FOOD_3)).toBeVisible()
-    // })
-    // test(`TEXT_OPT_FAV_FOOD_4`, () => {
-    //   render(<App lang="esp" />)
-    //   expect(screen.getByText(txt.esp.TEXT_OPT_FAV_FOOD_4)).toBeVisible()
-    // })
-    // test(`TEXT_SUBMIT`, () => {
-    //   render(<App lang="esp" />)
-    //   expect(screen.getByText(txt.esp.TEXT_SUBMIT)).toBeVisible()
-    // })
-    // test(`TEXT_FAV_LANG`, () => {
-    //   render(<App lang="esp" />)
-    //   expect(screen.getByText(txt.esp.TEXT_FAV_LANG)).toBeVisible()
-    // })
+    test(`TEXT_FAV_LANG_JS`, () => {
+      render(<App lang="esp" />)
+      expect(screen.getByText(txt.esp.TEXT_FAV_LANG_JS)).toBeVisible()
+    })
+    test(`TEXT_FAV_LANG_RUST`, () => {
+      render(<App lang="esp" />)
+      expect(screen.getByText(txt.esp.TEXT_FAV_LANG_RUST)).toBeVisible()
+    })
+    test(`TEXT_OPT_FAV_FOOD_1`, () => {
+      render(<App lang="esp" />)
+      expect(screen.getByText(txt.esp.TEXT_OPT_FAV_FOOD_1)).toBeVisible()
+    })
+    test(`TEXT_OPT_FAV_FOOD_2`, () => {
+      render(<App lang="esp" />)
+      expect(screen.getByText(txt.esp.TEXT_OPT_FAV_FOOD_2)).toBeVisible()
+    })
+    test(`TEXT_OPT_FAV_FOOD_3`, () => {
+      render(<App lang="esp" />)
+      expect(screen.getByText(txt.esp.TEXT_OPT_FAV_FOOD_3)).toBeVisible()
+    })
+    test(`TEXT_OPT_FAV_FOOD_4`, () => {
+      render(<App lang="esp" />)
+      expect(screen.getByText(txt.esp.TEXT_OPT_FAV_FOOD_4)).toBeVisible()
+    })
+    test(`TEXT_SUBMIT`, () => {
+      render(<App lang="esp" />)
+      expect(screen.getByText(txt.esp.TEXT_SUBMIT)).toBeVisible()
+    })
+    test(`TEXT_FAV_LANG`, () => {
+      render(<App lang="esp" />)
+      expect(screen.getByText(txt.esp.TEXT_FAV_LANG)).toBeVisible()
+    })
 
     test(`PLACEHOLDER_USERNAME is visible`, () => {
       render(<App lang="esp" />)
@@ -117,14 +117,14 @@ describe('Module 4 Project Tests', () => {
       render(<App lang="esp" />)
       expect(screen.getByLabelText(txt.esp.LABEL_USERNAME)).toBeVisible()
     })
-    // test('LABEL_FAV_FOOD', () => {
-    //   render(<App lang="esp" />)
-    //   expect(screen.getByLabelText(txt.esp.LABEL_FAV_FOOD)).toBeVisible()
-    // })
-    // test('LABEL_ACCEPT_TERMS', () => {
-    //   render(<App lang="esp" />)
-    //   expect(screen.getByLabelText(txt.esp.LABEL_ACCEPT_TERMS)).toBeVisible()
-    // })
+    test(`LABEL_FAV_FOOD`, () => {
+      render(<App lang="esp" />)
+      expect(screen.getByLabelText(txt.esp.LABEL_FAV_FOOD)).toBeVisible()
+    })
+    test(`LABEL_ACCEPT_TERMS`, () => {
+      render(<App lang="esp" />)
+      expect(screen.getByLabelText(txt.esp.LABEL_ACCEPT_TERMS)).toBeVisible()
+    })
   })
 
   describe('getEntriesByKeyPrefix', () => {
