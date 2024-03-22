@@ -129,6 +129,24 @@ describe('Module 4 Project Tests', () => {
 
   describe('getEntriesByKeyPrefix', () => {
     test('can extract the correct data', () => {
+      const obj ={
+      abc_1: "data_abc_1",
+      abc_2: "data_abc_2",
+      xyz_1: "data_xyz_1",
+      abc_3: "data_abc_3",
+      }
+      const expected = [
+      ["abc_1", "data_abc_1"],
+      ["abc_2", "data_abc_2"],
+      ["abc_3", "data_abc_3"],
+      ]
+      const expected2 = 
+    [
+      ["xyz_1", "data_xyz_1"],
+    ]
+      expect(getEntriesByKeyPrefix(obj, "abc")).toEqual(expected)
+      expect(getEntriesByKeyPrefix(obj, "xyz")).toEqual(expected2)
+      expect(getEntriesByKeyPrefix(obj, "zoo")).toEqual([])
     /*
       👉 TASK 4 part 2
 
@@ -144,6 +162,7 @@ describe('Module 4 Project Tests', () => {
   })
 })
 function getEntriesByKeyPrefix(obj, keyPrefix) {
+  return Object.entries(obj).filter(([key])=>key.split('_')[0] === keyPrefix) 
   /*
     👉 TASK 4 part 1
 
